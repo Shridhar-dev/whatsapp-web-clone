@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <title>WhatsApp Web Clone</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/600ff847ee.js" crossorigin="anonymous"></script>
+    <section id="contacts">
+        <nav>
+            <img id="contacts__user" src="https://images.pexels.com/photos/2599510/pexels-photo-2599510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div>
+                <i class="fa-solid fa-users"></i>
+                <i class="fa-solid fa-circle-notch"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </nav>
+        <div id="contacts__area">
+            <form>
+                <div id="searchbar">
+                    <i id="filterbutton" class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Search or start new chat"/>
+                </div>  
+                <i class="fa-solid fa-arrow-up-wide-short"></i>
+            </form>
+            <div class="contact">
+                <img class="contact__user" src="https://images.pexels.com/photos/2599510/pexels-photo-2599510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <div class="contact__info">
+                    <div class="contact__name">
+                        <p>XYZ</p>
+                        <small>Ohk</small>
+                    </div>
+                    <div class="contact__time">
+                        <small>11:06</small>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <img class="contact__user" src="https://images.pexels.com/photos/2599510/pexels-photo-2599510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                <div class="contact__info">
+                    <div class="contact__name">
+                        <p>XYZ</p>
+                        <small>Ohk</small>
+                    </div>
+                    <div class="contact__time">
+                        <small>11:06</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chats">
+        <div id="chats__info">
+            <img class="chats__user" src="https://images.pexels.com/photos/2599510/pexels-photo-2599510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+            <div class="chats__info">
+                <div class="chats__name">
+                    <p>XYZ</p>
+                    <small>Ohk</small>
+                </div>
+                <div class="chats__time">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="chats__messages">
+
+        </div>
+        <form id="chats__panel">
+            <button><i class="fa-regular fa-face-laugh-wink"></i></button>
+            <button><i class="fa-solid fa-paperclip"></i></button>
+            <input id="messagebar" placeholder="Type a message"/>
+            <button id="voicebutton"><i class="fa-solid fa-microphone"></i></button>
+        </form>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+</html>
